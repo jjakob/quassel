@@ -1,3 +1,3 @@
 SELECT senderid
 FROM sender
-WHERE sender = $1 AND coalesce(realname, '') = coalesce($2, '') AND coalesce(avatarurl, '') = coalesce($3, '')
+WHERE sender = coalesce($1, '') AND realname = coalesce($2, '') AND avatarurl = coalesce($3, '')
